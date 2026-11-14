@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="lanoffline"
+version="${file.jarVersion}"
+displayName="Offline LAN"
+description='''
+Lets players on offline-mode (non-Mojang-authenticated) launchers join a world opened to LAN.
+Only the host needs this mod.
+'''
+
+[[dependencies.lanoffline]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.lanoffline]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
